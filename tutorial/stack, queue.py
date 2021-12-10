@@ -22,7 +22,7 @@ for value in items:
     print(f'pushed: {value}, state: {queue}')
 
 queue[2] = 6 # 인덱싱을 통한 탐색, 대입 가능
-print(queue[:]) # deque는 list 자료형과 다르게 슬라이싱을 사용할 수 없음.
+# print(queue[:]) # deque는 list 자료형과 다르게 슬라이싱을 사용할 수 없음.
 
 for _ in range(2):
     output = queue.popleft() # pop
