@@ -13,3 +13,5 @@
 - 211010 ~ : 동빈북 정렬 공부, 백준 정렬 (https://www.acmicpc.net/step/9)
 
 - 211210: DFS/BFS, greedy 복습
+
+- 211211 ~ : binary search
