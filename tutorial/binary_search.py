@@ -7,14 +7,14 @@ Binary search
 유형:
 1. 특정 값 찾기
 2. lower bound, upper bound 찾기
-3. 최적화 문제(문제의 조건을 만족하는 특정 변수의 최소값/최대값을 찾는 문제)를 결정 문제(예/아니오로 대답할 수 있는 문제)로 바꾸어 품
-    x 는 정수일 때, f(x) = True (결과값이 문제에서 제시한 조건을 만족할 때)인 f(x)에서
-    x가 특정 값 미만에서는 False를 유지할 때, x의 최솟값을 찾는 문제
-    or
-    x가 특정 값 초과에서는 False를 유지할 때, x의 최댓값을 찾는 문제
-
-    를 결정문제로 변환:
-    f(x) = True인 x의 최적값을 찾기 위해, x의 전체 범위를 이진 탐색하면서 조건을 만족하는 x의 lower bound 또는 upper bound를 찾음.
+3. parametric search: 최적화 문제를 결정 문제로 변형하여 binary search를 통해 해결하는 방식.
+    조건:
+    1)  condition(x) = True를 만족하는 x의 최댓값 혹은 최솟값을 구하는 문제
+    2)  parameter x는 discrete set
+    3)  argmax_x {condition(x) = True} 에서, condition(x_0) = True라면 x <= x_0인 모든 x에서 condition(x) = True
+        또는
+        argmin_x {condition(x) = True} 에서, condition(x_0) = True라면 x >= x_0인 모든 x에서 condition(x) = True
+        을 만족
 """
 def bin_search(array, target, st, end):
     # array: 입력 배열
