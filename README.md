@@ -14,7 +14,7 @@
 
 - 211210: DFS/BFS, greedy 복습
 
-- 211211 ~ : binary search
+- 211211 ~ 211212 : binary search
     
     1) 특정 값 찾기
     
